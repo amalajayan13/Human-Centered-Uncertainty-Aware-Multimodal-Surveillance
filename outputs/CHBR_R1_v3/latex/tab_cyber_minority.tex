@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Benign-class performance on the primary cyber test.}
+\label{tab:cyber_minority}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrr}
+\toprule
+model & precision\_benign & recall\_benign & f1\_benign \\
+\midrule
+LogisticRegression & 0.96068 & 0.97269 & 0.96665 \\
+CalibratedLogisticRegression & 0.95972 & 0.97309 & 0.96636 \\
+RandomForest & 0.9683 & 0.99228 & 0.98014 \\
+ExtraTrees & 0.98522 & 0.97134 & 0.97823 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

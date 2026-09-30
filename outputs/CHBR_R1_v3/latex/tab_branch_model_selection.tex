@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Model-selection performance and thresholds chosen on separate validation subsets.}
+\label{tab:tab_branch_model_selection}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrr}
+\toprule
+branch & feature\_set & model & bal\_acc & roc\_auc & log\_loss & threshold \\
+\midrule
+video & full & LogisticRegression & 0.71437 & 0.79932 & 0.53387 & 0.49 \\
+video & full & RandomForest & 0.72062 & 0.79272 & 0.54667 & 0.47 \\
+video & full & ExtraTrees & 0.72137 & 0.79883 & 0.55051 & 0.47 \\
+video & ablated & LogisticRegression & 0.68925 & 0.76623 & 0.569 & 0.59 \\
+video & ablated & RandomForest & 0.69324 & 0.76139 & 0.57957 & 0.52 \\
+video & ablated & ExtraTrees & 0.6929 & 0.76731 & 0.58044 & 0.5 \\
+cyber & full & LogisticRegression & 0.98032 & 0.99335 & 0.062776 & 0.62 \\
+cyber & full & CalibratedLogisticRegression & 0.98032 & 0.9934 & 0.062592 & 0.68 \\
+cyber & full & RandomForest & 0.99261 & 0.99914 & 0.068111 & 0.65 \\
+cyber & full & ExtraTrees & 0.98155 & 0.9965 & 0.13458 & 0.41 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

@@ -1,0 +1,30 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Development-pool holdout sensitivity: descriptive means and standard deviations, not independent replication intervals.}
+\label{tab:holdout_schemes}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llllrrrrrr}
+\toprule
+branch & scheme & feature\_set & model & bal\_acc\_mean & bal\_acc\_std & roc\_auc\_mean & roc\_auc\_std & fpr\_mean & fpr\_std \\
+\midrule
+cyber & grouped\_stratified & full & CalibratedLogisticRegression & 0.98081 & 0.0012492 & 0.99283 & 0.00056449 & 0.028209 & 0.0025243 \\
+cyber & grouped\_stratified & full & ExtraTrees & 0.98325 & 0.0015393 & 0.99636 & 0.00034682 & 0.027883 & 0.0037022 \\
+cyber & grouped\_stratified & full & LogisticRegression & 0.98087 & 0.0011804 & 0.9929 & 0.00056754 & 0.028041 & 0.0024107 \\
+cyber & grouped\_stratified & full & RandomForest & 0.99335 & 0.00080043 & 0.99894 & 0.00012859 & 0.0071432 & 0.0017705 \\
+video & camera\_group & ablated & ExtraTrees & 0.68321 & 0.014179 & 0.75487 & 0.013258 & 0.23702 & 0.11032 \\
+video & camera\_group & ablated & LogisticRegression & 0.68655 & 0.012345 & 0.75538 & 0.0126 & 0.21883 & 0.087073 \\
+video & camera\_group & ablated & RandomForest & 0.68266 & 0.012 & 0.75072 & 0.012902 & 0.20735 & 0.090018 \\
+video & camera\_group & full & ExtraTrees & 0.70618 & 0.012323 & 0.78206 & 0.013155 & 0.20849 & 0.090553 \\
+video & camera\_group & full & LogisticRegression & 0.70819 & 0.013586 & 0.78397 & 0.012746 & 0.18839 & 0.08487 \\
+video & camera\_group & full & RandomForest & 0.70547 & 0.012175 & 0.77837 & 0.012708 & 0.20889 & 0.08535 \\
+video & stratified & ablated & ExtraTrees & 0.68964 & 0.0052631 & 0.75818 & 0.0044688 & 0.22038 & 0.045885 \\
+video & stratified & ablated & LogisticRegression & 0.68921 & 0.004338 & 0.75736 & 0.0040765 & 0.23413 & 0.029994 \\
+video & stratified & ablated & RandomForest & 0.68779 & 0.0039295 & 0.7547 & 0.0045345 & 0.21076 & 0.0431 \\
+video & stratified & full & ExtraTrees & 0.70868 & 0.0034097 & 0.78454 & 0.0039454 & 0.23349 & 0.057808 \\
+video & stratified & full & LogisticRegression & 0.71034 & 0.0039611 & 0.7854 & 0.0034817 & 0.21423 & 0.05031 \\
+video & stratified & full & RandomForest & 0.70918 & 0.0041673 & 0.78064 & 0.0036591 & 0.18107 & 0.039302 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

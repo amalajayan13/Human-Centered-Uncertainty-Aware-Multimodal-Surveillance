@@ -1,0 +1,24 @@
+{
+  "fusion_rows": 12961,
+  "validation_rows": 2160,
+  "theta": 0.36,
+  "tau_c": 0.65,
+  "tau_v": 0.47000000000000003,
+  "dual_modality_windows": 9474,
+  "single_modality_windows": 3487,
+  "both_capped_fraction": 0.02399506210940514,
+  "window_states": {
+    "high_risk": 7443,
+    "single_modality_only": 3487,
+    "low_risk": 1860,
+    "high_risk_uncertain": 117,
+    "uncertain": 54
+  },
+  "selected_models": {
+    "cyber": "RandomForest",
+    "video": "ExtraTrees"
+  },
+  "target": "OR of constituent labels",
+  "temporal_status": "surrogate cyber; generated surveillance",
+  "test_rows_not_used_for_selection": true
+}

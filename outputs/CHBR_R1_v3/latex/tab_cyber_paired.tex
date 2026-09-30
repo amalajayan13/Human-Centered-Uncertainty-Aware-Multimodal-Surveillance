@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Paired cyber balanced-accuracy differences on identical test observations; other metrics are in the CSV.}
+\label{tab:cyber_paired}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+comparison & mean\_diff & ci\_lo & ci\_hi & p\_value & p\_holm \\
+\midrule
+full/RandomForest - full/LogisticRegression & 0.010832 & 0.0095775 & 0.012128 & 0.00049975 & 0.0014993 \\
+full/RandomForest - full/CalibratedLogisticRegression & 0.01078 & 0.0095446 & 0.012089 & 0.00049975 & 0.0014993 \\
+full/RandomForest - full/ExtraTrees & 0.0079293 & 0.0066523 & 0.009246 & 0.00049975 & 0.0014993 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

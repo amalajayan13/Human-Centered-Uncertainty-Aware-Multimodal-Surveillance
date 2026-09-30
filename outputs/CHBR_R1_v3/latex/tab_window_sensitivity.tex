@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{UVIF window-width sensitivity for the OR target with unchanged record partitions. Other methods and targets are in the CSV.}
+\label{tab:window_sensitivity}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{rrrrrrrr}
+\toprule
+window\_s & n\_windows & dual\_modality & negative\_dual\_windows & bal\_acc & roc\_auc & fpr & graph\_largest\_frac \\
+\midrule
+30 & 41382 & 9474 & 977 & 0.95771 & 0.98796 & 0.018153 & 0.98665 \\
+60 & 22435 & 9474 & 977 & 0.93049 & 0.96911 & 0.030188 & 0.98384 \\
+120 & 12961 & 9474 & 977 & 0.88259 & 0.9172 & 0.047655 & 0.98256 \\
+300 & 5185 & 3791 & 143 & 0.84761 & 0.88891 & 0.053476 & 0.99154 \\
+600 & 2593 & 1896 & 12 & 0.80802 & 0.89094 & 0.2069 & 0.99744 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

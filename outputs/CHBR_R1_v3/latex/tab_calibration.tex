@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Held-out probability calibration; uncertainty is a posterior-distance proxy.}
+\label{tab:calibration}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrr}
+\toprule
+branch & model & partition & ece & brier & log\_loss & mean\_uncertainty \\
+\midrule
+video & LogisticRegression & test & 0.019354 & 0.18503 & 0.54632 & 0.56827 \\
+video & RandomForest & test & 0.030969 & 0.18749 & 0.55388 & 0.62432 \\
+video & ExtraTrees & test & 0.056026 & 0.18867 & 0.55744 & 0.67221 \\
+cyber & LogisticRegression & test & 0.011529 & 0.014885 & 0.069395 & 0.04195 \\
+cyber & CalibratedLogisticRegression & test & 0.0097065 & 0.014839 & 0.069395 & 0.040175 \\
+cyber & RandomForest & test & 0.052084 & 0.010124 & 0.069863 & 0.11512 \\
+cyber & ExtraTrees & test & 0.102 & 0.028163 & 0.13826 & 0.22149 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

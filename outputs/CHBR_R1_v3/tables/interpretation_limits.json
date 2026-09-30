@@ -1,0 +1,12 @@
+{
+  "data": "Generated surveillance descriptors and an existing cyber subset; no independent physical-cyber test dataset.",
+  "history": "The dataset has previously been inspected; within-run test separation is not a new prospective external validation.",
+  "uncertainty": "Deterministic posterior-distance ambiguity, not epistemic uncertainty.",
+  "alignment": "Synthetic cyber timing and label-blind paired diagnostics, not observed correspondence.",
+  "fusion_target": "OR and AND of branch labels, not independent incident or campaign annotations.",
+  "fusion_probability": "Adjusted scores and discounted masses are not asserted to be calibrated OR-event probabilities.",
+  "baselines": "Dempster-Shafer algebra uses an explicitly defined score-to-mass mapping; no DDEF neural architecture is implemented.",
+  "graph": "Same-modality score similarity and surrogate time do not prove campaign identity or causal linkage.",
+  "statistics": "Conditional percentile intervals depend on cluster/block assumptions; repeated seeds and holdouts are descriptive sensitivity analyses.",
+  "human_evaluation": "No human participants, cognitive-workload evaluation, trust evaluation, or feedback learning."
+}

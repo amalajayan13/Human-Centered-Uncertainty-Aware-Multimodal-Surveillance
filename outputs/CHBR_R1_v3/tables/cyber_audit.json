@@ -1,0 +1,36 @@
+{
+  "path": "F:\\MBZUAI UAE\\7-Elsevier-CHBR-Human-centered\\GitHub-v2\\Datasets\\ToN_IoT\\ton_iot.csv",
+  "sha256": "26ddc513552de36de6428b2e578efaed2b57504c716dfba847cc0109a64e1974",
+  "raw_rows": 211043,
+  "retained_rows": 190474,
+  "duplicates_removed": 20569,
+  "feature_count": 30,
+  "class_counts": {
+    "0": 42040,
+    "1": 148434
+  },
+  "raw_class_counts": {
+    "0": 50000,
+    "1": 161043
+  },
+  "excluded_features": [
+    "dns_query",
+    "dst_bytes",
+    "dst_ip",
+    "dst_ip_bytes",
+    "dst_pkts",
+    "http_uri",
+    "label",
+    "src_bytes",
+    "src_ip",
+    "src_ip_bytes",
+    "src_pkts",
+    "ssl_issuer",
+    "ssl_subject",
+    "type"
+  ],
+  "repeated_predictor_patterns": 16226,
+  "subset_provenance": "Parent-dataset subset selection not supplied; input file retained without resampling.",
+  "synchronization": "none",
+  "temporal_status": "surrogate"
+}

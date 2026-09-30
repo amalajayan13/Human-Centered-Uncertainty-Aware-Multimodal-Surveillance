@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{UVIF fixed-target delay and dropout stress tests for the OR target. Metrics are conditional on observed windows; all methods and class-specific abstentions are in the CSV.}
+\label{tab:tab_observation_sensitivity}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+scenario & coverage & bal\_acc & roc\_auc & fpr & abstained\_positive & abstained\_negative \\
+\midrule
+offset\_-300 & 1 & 0.88255 & 0.91719 & 0.048033 & 0 & 0 \\
+offset\_-120 & 1 & 0.88245 & 0.91779 & 0.048033 & 0 & 0 \\
+offset\_0 & 1 & 0.88259 & 0.9172 & 0.047655 & 0 & 0 \\
+offset\_120 & 1 & 0.88235 & 0.91738 & 0.048033 & 0 & 0 \\
+offset\_300 & 1 & 0.88231 & 0.91662 & 0.04879 & 0 & 0 \\
+missing\_cyber\_0.1 & 1 & 0.8824 & 0.91701 & 0.048033 & 0 & 0 \\
+missing\_cyber\_0.3 & 1 & 0.88177 & 0.9163 & 0.048411 & 0 & 0 \\
+missing\_cyber\_0.5 & 1 & 0.87699 & 0.9132 & 0.049168 & 0 & 0 \\
+missing\_video\_0.1 & 0.97562 & 0.88593 & 0.91678 & 0.045218 & 171 & 145 \\
+missing\_video\_0.3 & 0.91922 & 0.89237 & 0.91748 & 0.041199 & 539 & 508 \\
+missing\_video\_0.5 & 0.8676 & 0.8996 & 0.91807 & 0.036512 & 907 & 809 \\
+missing\_both\_0.1 & 0.97562 & 0.88578 & 0.91659 & 0.045618 & 171 & 145 \\
+missing\_both\_0.3 & 0.91876 & 0.89164 & 0.91661 & 0.042135 & 545 & 508 \\
+missing\_both\_0.5 & 0.86212 & 0.89558 & 0.91516 & 0.038251 & 973 & 814 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

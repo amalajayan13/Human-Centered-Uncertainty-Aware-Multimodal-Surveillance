@@ -1,0 +1,4 @@
+{
+  "max_reconstruction_error": 0.0,
+  "meaning": "Algebraic score reconstruction, not explanation fidelity or human usability."
+}

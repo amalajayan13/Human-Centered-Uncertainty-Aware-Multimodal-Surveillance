@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Balanced-accuracy differences, latent oracle minus observable predictors. Latent models are diagnostic only; other metrics are in the CSV.}
+\label{tab:hidden_incident_effect}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrr}
+\toprule
+feature\_set & model & mean\_diff & ci\_lo & ci\_hi & p\_value & p\_holm \\
+\midrule
+full & LogisticRegression & 0.0015882 & -0.0024179 & 0.005606 & 0.45677 & 0.56972 \\
+full & RandomForest & 0.0025931 & -0.0011724 & 0.006343 & 0.18991 & 0.56972 \\
+full & ExtraTrees & 0.0020901 & -0.0015538 & 0.0056218 & 0.26237 & 0.56972 \\
+ablated & LogisticRegression & 0.0089678 & 0.0053762 & 0.012502 & 0.00049975 & 0.0029985 \\
+ablated & RandomForest & 0.0095397 & 0.0056477 & 0.013407 & 0.00049975 & 0.0029985 \\
+ablated & ExtraTrees & 0.011051 & 0.007664 & 0.014529 & 0.00049975 & 0.0029985 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

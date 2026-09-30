@@ -1,0 +1,92 @@
+{
+  "target_or": {
+    "controls": {
+      "prior": 0.7916666666666666,
+      "availability": {
+        "0": 0.7916666666666666,
+        "1": 0.5152104959630911,
+        "2": 0.7916666666666666,
+        "3": 0.8925452441077442
+      }
+    },
+    "thresholds": {
+      "CyberOnly": 0.8,
+      "VideoOnly": 0.53,
+      "AvailabilityOnly": 0.52,
+      "AlwaysPositive": 0.5,
+      "AlwaysNegative": 0.5,
+      "Mean": 0.56,
+      "Maximum": 0.65,
+      "FixedCyber75": 0.64,
+      "FixedCyber25": 0.44,
+      "ConfidenceUncapped": 0.6,
+      "ConfidenceCapped": 0.6,
+      "ConfidencePenalty": 0.36,
+      "DempsterShafer": 0.64,
+      "DiscountedDempsterShafer": 0.5700000000000001,
+      "UVIF": 0.36
+    },
+    "reasons": {
+      "CyberOnly": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "VideoOnly": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "AvailabilityOnly": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "AlwaysPositive": "fixed_control",
+      "AlwaysNegative": "fixed_control",
+      "Mean": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "Maximum": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "FixedCyber75": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "FixedCyber25": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "ConfidenceUncapped": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "ConfidenceCapped": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "ConfidencePenalty": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "DempsterShafer": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "DiscountedDempsterShafer": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "UVIF": "validation_bal_acc_then_fpr_then_distance_to_0.5"
+    }
+  },
+  "target_and": {
+    "controls": {
+      "prior": 0.31527777777777777,
+      "availability": {
+        "0": 0.31527777777777777,
+        "1": 0.0005454632833525567,
+        "2": 0.31527777777777777,
+        "3": 0.4301232814253647
+      }
+    },
+    "thresholds": {
+      "CyberOnly": 0.62,
+      "VideoOnly": 0.46,
+      "AvailabilityOnly": 0.43,
+      "AlwaysPositive": 0.5,
+      "AlwaysNegative": 0.5,
+      "Mean": 0.66,
+      "Maximum": 0.86,
+      "FixedCyber75": 0.79,
+      "FixedCyber25": 0.54,
+      "ConfidenceUncapped": 0.75,
+      "ConfidenceCapped": 0.74,
+      "ConfidencePenalty": 0.68,
+      "DempsterShafer": 0.89,
+      "DiscountedDempsterShafer": 0.76,
+      "UVIF": 0.68
+    },
+    "reasons": {
+      "CyberOnly": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "VideoOnly": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "AvailabilityOnly": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "AlwaysPositive": "fixed_control",
+      "AlwaysNegative": "fixed_control",
+      "Mean": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "Maximum": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "FixedCyber75": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "FixedCyber25": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "ConfidenceUncapped": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "ConfidenceCapped": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "ConfidencePenalty": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "DempsterShafer": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "DiscountedDempsterShafer": "validation_bal_acc_then_fpr_then_distance_to_0.5",
+      "UVIF": "validation_bal_acc_then_fpr_then_distance_to_0.5"
+    }
+  }
+}

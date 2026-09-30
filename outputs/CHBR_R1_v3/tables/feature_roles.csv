@@ -1,0 +1,62 @@
+branch,feature,retained_full,retained_ablated,role
+video,timestamp,False,False,observable_or_context
+video,camera_id,True,True,observable_or_context
+video,zone_id,True,True,observable_or_context
+video,motion_intensity,True,True,observable_or_context
+video,scene_density,True,True,observable_or_context
+video,authenticity_score,True,False,observable_or_context
+video,temporal_consistency,True,False,observable_or_context
+video,uncertainty_score,True,False,observable_or_context
+video,hidden_incident,False,False,latent_state
+video,suspicious_probability,False,False,label_generating_score
+video,suspicious_label,False,False,target
+video,source_row_id,False,False,record_identifier
+video,hour,True,True,observable_or_context
+video,dayofweek,True,True,observable_or_context
+video,dayofyear,True,True,observable_or_context
+video,unix_time,True,True,observable_or_context
+cyber,src_ip,False,False,excluded
+cyber,src_port,True,False,predictor
+cyber,dst_ip,False,False,excluded
+cyber,dst_port,True,False,predictor
+cyber,proto,True,False,predictor
+cyber,service,True,False,predictor
+cyber,duration,True,False,predictor
+cyber,src_bytes,False,False,study_specific_exclusion; not intrinsically a leaking feature
+cyber,dst_bytes,False,False,study_specific_exclusion; not intrinsically a leaking feature
+cyber,conn_state,True,False,predictor
+cyber,missed_bytes,True,False,predictor
+cyber,src_pkts,False,False,study_specific_exclusion; not intrinsically a leaking feature
+cyber,src_ip_bytes,False,False,study_specific_exclusion; not intrinsically a leaking feature
+cyber,dst_pkts,False,False,study_specific_exclusion; not intrinsically a leaking feature
+cyber,dst_ip_bytes,False,False,study_specific_exclusion; not intrinsically a leaking feature
+cyber,dns_query,False,False,excluded
+cyber,dns_qclass,True,False,predictor
+cyber,dns_qtype,True,False,predictor
+cyber,dns_rcode,True,False,predictor
+cyber,dns_AA,True,False,predictor
+cyber,dns_RD,True,False,predictor
+cyber,dns_RA,True,False,predictor
+cyber,dns_rejected,True,False,predictor
+cyber,ssl_version,True,False,predictor
+cyber,ssl_cipher,True,False,predictor
+cyber,ssl_resumed,True,False,predictor
+cyber,ssl_established,True,False,predictor
+cyber,ssl_subject,False,False,excluded
+cyber,ssl_issuer,False,False,excluded
+cyber,http_trans_depth,True,False,predictor
+cyber,http_method,True,False,predictor
+cyber,http_uri,False,False,excluded
+cyber,http_version,True,False,predictor
+cyber,http_request_body_len,True,False,predictor
+cyber,http_response_body_len,True,False,predictor
+cyber,http_status_code,True,False,predictor
+cyber,http_user_agent,True,False,predictor
+cyber,http_orig_mime_types,True,False,predictor
+cyber,http_resp_mime_types,True,False,predictor
+cyber,weird_name,True,False,predictor
+cyber,weird_addl,True,False,predictor
+cyber,weird_notice,True,False,predictor
+cyber,label,False,False,excluded
+cyber,type,False,False,excluded
+cyber,source_row_id,False,False,excluded

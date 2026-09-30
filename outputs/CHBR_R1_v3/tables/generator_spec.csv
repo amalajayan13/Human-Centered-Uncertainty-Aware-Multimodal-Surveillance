@@ -1,0 +1,12 @@
+variable,role,generating_expression
+timestamp,context,2min grid; 60 days from 2024-01-01
+camera_id,predictor,"Uniform integer [0,9]; risk N(0,0.35^2)"
+zone_id,predictor,"Uniform integer [0,4]; risk N(0,0.40^2)"
+hidden_incident,latent; diagnostic only,Bernoulli(0.18); add 0.08 after state 1; clip transition at 0.95
+motion_intensity,predictor,"clip(0.35+0.35Z+0.15r_camera+N(0,0.18^2),0,1)"
+scene_density,predictor,"clip(0.30+0.30Z+0.20r_zone+N(0,0.20^2),0,1)"
+authenticity_score,quality predictor,"clip(0.65-0.15Z+N(0,0.20^2),0,1)"
+temporal_consistency,quality predictor,"clip(0.60-0.10Z+N(0,0.22^2),0,1)"
+uncertainty_score,quality predictor,"clip(0.35+0.20Z+N(0,0.20^2),0,1)"
+suspicious_probability,label mechanism; excluded,"sigmoid(1.2Z+1.1motion+0.9density-0.6authenticity-0.4consistency+0.6uncertainty+0.20r_camera+0.25r_zone+N(0,0.65^2))"
+suspicious_label,target,"1[probability>0.58], independently flipped with probability 0.04"

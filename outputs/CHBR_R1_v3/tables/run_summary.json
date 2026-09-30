@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "elapsed_seconds": 2099.7523980999977,
+  "unit_checks_passed": 21,
+  "cyber_sha256": "26ddc513552de36de6428b2e578efaed2b57504c716dfba847cc0109a64e1974",
+  "surveillance_sha256": "577fc52949da78aa331eae138cdd9f176f3c1a257a8addf90d49263381b75928",
+  "selected_models": {
+    "cyber": "RandomForest",
+    "video": "ExtraTrees"
+  },
+  "test_windows": 12961,
+  "graph": {
+    "nodes": 60190,
+    "evidence_nodes": 50141,
+    "hub_nodes": 10049,
+    "edges": 19193057,
+    "components": 519,
+    "largest": 59140,
+    "largest_frac": 0.9825552417345074,
+    "singletons": 0,
+    "non_singleton": 519,
+    "empty_hubs": 0,
+    "retained_candidates": 9,
+    "multimodal_candidates": 6,
+    "edge_families": {
+      "window": 50141,
+      "similarity": 19099581,
+      "temporal": 43871
+    },
+    "multi_family_duplicates": 536,
+    "direct_cross_modal_edges": 0,
+    "parameters": {
+      "similarity_threshold": 0.92,
+      "sample_cap": 5000,
+      "temporal_seconds": 60,
+      "similarity_time_limit": null
+    },
+    "window_seconds": 120
+  },
+  "interpretation_flags": [
+    "More than 90% of graph nodes lie in the largest component; this is not evidence of campaign separation.",
+    "Modality-availability controls and stratified composition must accompany pooled fusion metrics.",
+    "Some rules have zero observed false positives. A zero-width bootstrap interval does not establish zero population risk; IID binomial reference limits are supplied separately.",
+    "Parent-dataset subset selection not supplied; input file retained without resampling."
+  ]
+}

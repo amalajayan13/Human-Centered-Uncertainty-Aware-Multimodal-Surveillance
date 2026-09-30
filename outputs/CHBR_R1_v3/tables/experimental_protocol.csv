@@ -1,0 +1,9 @@
+branch,partition,rows,positives,positive_fraction,negatives,data_status,temporal_status,synchronization
+cyber,model_selection,9504,7457,0.78461700336700335,2047,benchmark telemetry subset,surrogate; not observed time,none
+cyber,test,56843,44283,0.77904051510300298,12560,benchmark telemetry subset,surrogate; not observed time,none
+cyber,threshold_selection,9497,7436,0.78298410024218179,2061,benchmark telemetry subset,surrogate; not observed time,none
+cyber,train,114630,89258,0.778661781383582,25372,benchmark telemetry subset,surrogate; not observed time,none
+video,model_selection,2159,1107,0.51273737841593325,1052,generated event descriptors,generated timestamps,none
+video,test,12961,6857,0.52904868451508369,6104,generated event descriptors,generated timestamps,none
+video,threshold_selection,2160,1151,0.53287037037037033,1009,generated event descriptors,generated timestamps,none
+video,train,25920,13508,0.52114197530864192,12412,generated event descriptors,generated timestamps,none

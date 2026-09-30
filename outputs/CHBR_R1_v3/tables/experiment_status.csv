@@ -1,0 +1,13 @@
+stage,status,detail
+data,complete,Exact file provenance and generated surveillance realization recorded.
+model_selection,complete,Selections saved before primary test scoring.
+branch_inference,complete,Conditional test intervals; no bootstrap over overlapping split scores.
+repeated_fits,complete,20 fixed-partition seeds; primary model selection unchanged.
+holdout_sensitivity,complete,All alternative holdouts restricted to development observations.
+window_fusion,complete,12961 test windows; separate validation windows used for all thresholds.
+paired_diagnostic,complete,"Label-blind pairs, explicit used/unused records, no event correspondence claim."
+primary_graph,complete,"Unique edge counts, node types, component membership, and candidate scores exported."
+sensitivity,complete,"Graph, window, ordering, delay, and dropout scenarios executed and mapped to source records."
+software_checks,complete,21 invariants passed.
+pipeline,complete,All configured experiments and numerical exports completed.
+pipeline,complete,All configured experiments and numerical exports completed.

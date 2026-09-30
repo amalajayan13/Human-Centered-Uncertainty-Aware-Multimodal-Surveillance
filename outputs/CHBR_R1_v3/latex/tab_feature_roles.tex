@@ -1,0 +1,75 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Predictor and metadata roles.}
+\label{tab:tab_feature_roles}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrl}
+\toprule
+branch & feature & retained\_full & retained\_ablated & role \\
+\midrule
+video & timestamp & False & False & observable\_or\_context \\
+video & camera\_id & True & True & observable\_or\_context \\
+video & zone\_id & True & True & observable\_or\_context \\
+video & motion\_intensity & True & True & observable\_or\_context \\
+video & scene\_density & True & True & observable\_or\_context \\
+video & authenticity\_score & True & False & observable\_or\_context \\
+video & temporal\_consistency & True & False & observable\_or\_context \\
+video & uncertainty\_score & True & False & observable\_or\_context \\
+video & hidden\_incident & False & False & latent\_state \\
+video & suspicious\_probability & False & False & label\_generating\_score \\
+video & suspicious\_label & False & False & target \\
+video & source\_row\_id & False & False & record\_identifier \\
+video & hour & True & True & observable\_or\_context \\
+video & dayofweek & True & True & observable\_or\_context \\
+video & dayofyear & True & True & observable\_or\_context \\
+video & unix\_time & True & True & observable\_or\_context \\
+cyber & src\_ip & False & False & excluded \\
+cyber & src\_port & True & False & predictor \\
+cyber & dst\_ip & False & False & excluded \\
+cyber & dst\_port & True & False & predictor \\
+cyber & proto & True & False & predictor \\
+cyber & service & True & False & predictor \\
+cyber & duration & True & False & predictor \\
+cyber & src\_bytes & False & False & study\_specific\_exclusion; not intrinsically a leaking feature \\
+cyber & dst\_bytes & False & False & study\_specific\_exclusion; not intrinsically a leaking feature \\
+cyber & conn\_state & True & False & predictor \\
+cyber & missed\_bytes & True & False & predictor \\
+cyber & src\_pkts & False & False & study\_specific\_exclusion; not intrinsically a leaking feature \\
+cyber & src\_ip\_bytes & False & False & study\_specific\_exclusion; not intrinsically a leaking feature \\
+cyber & dst\_pkts & False & False & study\_specific\_exclusion; not intrinsically a leaking feature \\
+cyber & dst\_ip\_bytes & False & False & study\_specific\_exclusion; not intrinsically a leaking feature \\
+cyber & dns\_query & False & False & excluded \\
+cyber & dns\_qclass & True & False & predictor \\
+cyber & dns\_qtype & True & False & predictor \\
+cyber & dns\_rcode & True & False & predictor \\
+cyber & dns\_AA & True & False & predictor \\
+cyber & dns\_RD & True & False & predictor \\
+cyber & dns\_RA & True & False & predictor \\
+cyber & dns\_rejected & True & False & predictor \\
+cyber & ssl\_version & True & False & predictor \\
+cyber & ssl\_cipher & True & False & predictor \\
+cyber & ssl\_resumed & True & False & predictor \\
+cyber & ssl\_established & True & False & predictor \\
+cyber & ssl\_subject & False & False & excluded \\
+cyber & ssl\_issuer & False & False & excluded \\
+cyber & http\_trans\_depth & True & False & predictor \\
+cyber & http\_method & True & False & predictor \\
+cyber & http\_uri & False & False & excluded \\
+cyber & http\_version & True & False & predictor \\
+cyber & http\_request\_body\_len & True & False & predictor \\
+cyber & http\_response\_body\_len & True & False & predictor \\
+cyber & http\_status\_code & True & False & predictor \\
+cyber & http\_user\_agent & True & False & predictor \\
+cyber & http\_orig\_mime\_types & True & False & predictor \\
+cyber & http\_resp\_mime\_types & True & False & predictor \\
+cyber & weird\_name & True & False & predictor \\
+cyber & weird\_addl & True & False & predictor \\
+cyber & weird\_notice & True & False & predictor \\
+cyber & label & False & False & excluded \\
+cyber & type & False & False & excluded \\
+cyber & source\_row\_id & False & False & excluded \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

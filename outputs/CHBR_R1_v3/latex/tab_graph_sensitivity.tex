@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{One-factor graph sensitivity relative to the reference configuration; no independent campaign truth.}
+\label{tab:graph_sensitivity}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+scenario & edges & components & largest\_frac & retained\_candidates & component\_ari & largest\_evidence\_jaccard \\
+\midrule
+reference & 19193057 & 519 & 0.98256 & 9 & 1 & 1 \\
+similarity\_threshold\_0.96 & 17560031 & 519 & 0.98256 & 9 & 1 & 1 \\
+similarity\_threshold\_0.98 & 15346898 & 519 & 0.98256 & 9 & 1 & 1 \\
+similarity\_threshold\_0.995 & 11269788 & 519 & 0.98256 & 9 & 1 & 1 \\
+similarity\_threshold\_0.999 & 7245067 & 519 & 0.98256 & 9 & 1 & 1 \\
+sample\_cap\_1000 & 859129 & 2225 & 0.925 & 39 & 0.36024 & 0.96462 \\
+sample\_cap\_2500 & 4875883 & 1587 & 0.94677 & 25 & 0.48165 & 0.97811 \\
+temporal\_seconds\_0 & 19149722 & 2747 & 0.7205 & 2236 & 0.045013 & 0.72694 \\
+temporal\_seconds\_30 & 19192763 & 531 & 0.98128 & 20 & 0.94381 & 0.99875 \\
+temporal\_seconds\_120 & 19194895 & 189 & 0.99316 & 16 & 0.55976 & 0.99355 \\
+similarity\_time\_limit\_120 & 97894 & 2172 & 0.30221 & 428 & 0.012423 & 0.31733 \\
+similarity\_time\_limit\_600 & 115082 & 1079 & 0.42763 & 358 & 0.020297 & 0.44905 \\
+similarity\_time\_limit\_3600 & 222847 & 521 & 0.98247 & 10 & 0.99713 & 0.99994 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

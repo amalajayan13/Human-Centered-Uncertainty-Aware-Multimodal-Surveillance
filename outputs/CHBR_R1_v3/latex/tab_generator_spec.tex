@@ -1,0 +1,25 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Surveillance-event generation procedure.}
+\label{tab:generator_spec}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{0.19\textwidth}p{0.21\textwidth}p{0.50\textwidth}}
+\toprule
+variable & role & generating\_expression \\
+\midrule
+timestamp & context & 2min grid; 60 days from 2024-01-01 \\
+camera\_id & predictor & Uniform integer [0, 9]; risk N(0, 0.35\textasciicircum 2) \\
+zone\_id & predictor & Uniform integer [0, 4]; risk N(0, 0.40\textasciicircum 2) \\
+hidden\_incident & latent; diagnostic only & Bernoulli(0.18); add 0.08 after state 1; clip transition at 0.95 \\
+motion\_intensity & predictor & clip(0.35 + 0.35Z + 0.15r\_camera + N(0, 0.18\textasciicircum 2), 0, 1) \\
+scene\_density & predictor & clip(0.30 + 0.30Z + 0.20r\_zone + N(0, 0.20\textasciicircum 2), 0, 1) \\
+authenticity\_score & quality predictor & clip(0.65-0.15Z + N(0, 0.20\textasciicircum 2), 0, 1) \\
+temporal\_consistency & quality predictor & clip(0.60-0.10Z + N(0, 0.22\textasciicircum 2), 0, 1) \\
+uncertainty\_score & quality predictor & clip(0.35 + 0.20Z + N(0, 0.20\textasciicircum 2), 0, 1) \\
+suspicious\_probability & label mechanism; excluded & sigmoid(1.2Z + 1.1motion + 0.9density-0.6authenticity-0.4consistency + 0.6uncertainty + 0.20r\_camera + 0.25r\_zone + N(0, 0.65\textasciicircum 2)) \\
+suspicious\_label & target & 1[probability>0.58],  independently flipped with probability 0.04 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

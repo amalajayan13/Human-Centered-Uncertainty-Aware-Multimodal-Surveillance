@@ -1,0 +1,12 @@
+Candidate evidence groups from controlled cross-modal organization.
+These are graph-derived candidates, not independently verified campaigns.
+
+Rank 1; component 0; 49611 evidence nodes (43921 cyber, 5690 surveillance); 9529 hubs; score 1.670991; mean fusion 0.675775; 2024-02-11 23:58:00 to 2024-02-29 23:46:00.
+Rank 2; component 43; 2 evidence nodes (1 cyber, 1 surveillance); 1 hubs; score 0.525532; mean fusion 0.528072; 2024-02-20 05:44:00 to 2024-02-20 05:45:00.
+Rank 3; component 11; 2 evidence nodes (1 cyber, 1 surveillance); 1 hubs; score 0.519951; mean fusion 0.547552; 2024-02-17 14:48:00 to 2024-02-17 14:49:20.
+Rank 4; component 2; 3 evidence nodes (2 cyber, 1 surveillance); 2 hubs; score 0.421363; mean fusion 0.465604; 2024-02-17 10:30:00 to 2024-02-17 10:32:00.
+Rank 5; component 1; 5 evidence nodes (5 cyber, 0 surveillance); 2 hubs; score 0.353168; mean fusion 0.305300; 2024-02-17 09:20:00 to 2024-02-17 09:22:40.
+Rank 6; component 17; 2 evidence nodes (2 cyber, 0 surveillance); 1 hubs; score 0.282915; mean fusion 0.255838; 2024-02-19 00:28:00 to 2024-02-19 00:29:40.
+Rank 7; component 18; 2 evidence nodes (2 cyber, 0 surveillance); 1 hubs; score 0.221858; mean fusion 0.236075; 2024-02-19 01:42:00 to 2024-02-19 01:43:20.
+Rank 8; component 30; 2 evidence nodes (1 cyber, 1 surveillance); 1 hubs; score -0.002696; mean fusion 0.165804; 2024-02-19 12:48:00 to 2024-02-19 12:48:00.
+Rank 9; component 13; 2 evidence nodes (1 cyber, 1 surveillance); 1 hubs; score -0.033557; mean fusion 0.196383; 2024-02-17 15:22:00 to 2024-02-17 15:23:20.

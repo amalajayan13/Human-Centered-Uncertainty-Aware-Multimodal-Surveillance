@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Balanced-accuracy differences, full minus ablated. Block randomization p-values are Holm-adjusted; other metrics are in the CSV.}
+\label{tab:ablation_paired}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+comparison & mean\_diff & ci\_lo & ci\_hi & p\_value & p\_holm \\
+\midrule
+full/LogisticRegression - ablated/LogisticRegression & 0.017759 & 0.010601 & 0.024955 & 0.00049975 & 0.0014993 \\
+full/RandomForest - ablated/RandomForest & 0.01488 & 0.0079125 & 0.021626 & 0.00049975 & 0.0014993 \\
+full/ExtraTrees - ablated/ExtraTrees & 0.017781 & 0.011362 & 0.024568 & 0.00049975 & 0.0014993 \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

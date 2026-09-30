@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Target composition conditional on modality availability.}
+\label{tab:tab_fusion_availability}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{rrrrrll}
+\toprule
+cyber\_present & video\_present & target\_or & target\_and & count & protocol & partition \\
+\midrule
+False & True & 0 & 0 & 280 & window & threshold\_selection \\
+False & True & 1 & 0 & 297 & window & threshold\_selection \\
+True & True & 0 & 0 & 170 & window & threshold\_selection \\
+True & True & 1 & 0 & 732 & window & threshold\_selection \\
+True & True & 1 & 1 & 681 & window & threshold\_selection \\
+False & True & 0 & 0 & 1667 & window & test \\
+False & True & 1 & 0 & 1820 & window & test \\
+True & True & 0 & 0 & 977 & window & test \\
+True & True & 1 & 0 & 4576 & window & test \\
+True & True & 1 & 1 & 3921 & window & test \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

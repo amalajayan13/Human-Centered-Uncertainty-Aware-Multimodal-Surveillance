@@ -1,0 +1,8 @@
+{
+  "alpha": 1.0,
+  "beta": 0.1,
+  "gamma": 0.5,
+  "rank_validation": "No independent campaign ground truth; agreement is descriptive.",
+  "kendall_tau": 0.5555555555555556,
+  "p_value": 0.04461529982363316
+}

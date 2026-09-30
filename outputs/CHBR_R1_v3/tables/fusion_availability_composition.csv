@@ -1,0 +1,11 @@
+cyber_present,video_present,target_or,target_and,count,protocol,partition
+False,True,0,0,280,window,threshold_selection
+False,True,1,0,297,window,threshold_selection
+True,True,0,0,170,window,threshold_selection
+True,True,1,0,732,window,threshold_selection
+True,True,1,1,681,window,threshold_selection
+False,True,0,0,1667,window,test
+False,True,1,0,1820,window,test
+True,True,0,0,977,window,test
+True,True,1,0,4576,window,test
+True,True,1,1,3921,window,test

@@ -1,0 +1,2 @@
+rank,campaign_id,nodes,cyber_nodes,video_nodes,hub_nodes,start,end,evidence_nodes,edges,span_seconds,mean_score,max_score,mean_uncertainty,mean_fusion,hub_uncertainty,psi,modality_pattern
+1,0,60652,43972,5867,10813,2024-02-11 23:58:00,2024-02-29 23:46:00,49839,19192861,1554480,0.91258463862175554,0.98389942124649454,0.17393959940087808,0.60404032409081243,0.28279003480381681,1.5987278397365068,multimodal

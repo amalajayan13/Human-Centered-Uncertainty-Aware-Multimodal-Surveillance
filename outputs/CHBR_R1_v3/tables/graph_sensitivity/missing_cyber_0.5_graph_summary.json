@@ -1,0 +1,28 @@
+{
+  "nodes": 38026,
+  "evidence_nodes": 28073,
+  "hub_nodes": 9953,
+  "edges": 19084647,
+  "components": 772,
+  "largest": 35941,
+  "largest_frac": 0.9451690948298532,
+  "singletons": 0,
+  "non_singleton": 772,
+  "empty_hubs": 0,
+  "retained_candidates": 184,
+  "multimodal_candidates": 51,
+  "edge_families": {
+    "window": 28073,
+    "similarity": 19038518,
+    "temporal": 19009
+  },
+  "multi_family_duplicates": 953,
+  "direct_cross_modal_edges": 0,
+  "parameters": {
+    "similarity_threshold": 0.92,
+    "sample_cap": 5000,
+    "temporal_seconds": 60,
+    "similarity_time_limit": null
+  },
+  "window_seconds": 120
+}

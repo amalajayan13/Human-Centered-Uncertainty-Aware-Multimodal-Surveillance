@@ -1,0 +1,112 @@
+Project root: F:\MBZUAI UAE\7-Elsevier-CHBR-Human-centered\GitHub-v2
+Output directory: F:\MBZUAI UAE\7-Elsevier-CHBR-Human-centered\GitHub-v2\Outputs\CHBR_R1_v3
+Cyber records: 211043 loaded, 190474 retained; surveillance records: 43200.
+data: complete. Exact file provenance and generated surveillance realization recorded.
+Fitted video/full/LogisticRegression
+Fitted video/full/RandomForest
+Fitted video/full/ExtraTrees
+Fitted video/ablated/LogisticRegression
+Fitted video/ablated/RandomForest
+Fitted video/ablated/ExtraTrees
+Fitted cyber/full/LogisticRegression
+Fitted cyber/full/CalibratedLogisticRegression
+Fitted cyber/full/RandomForest
+Fitted cyber/full/ExtraTrees
+Selected models: {'cyber': 'RandomForest', 'video': 'ExtraTrees'}
+model_selection: complete. Selections saved before primary test scoring.
+Completed video confidence intervals.
+Completed cyber confidence intervals.
+branch_inference: complete. Conditional test intervals; no bootstrap over overlapping split scores.
+Repeated fits: 2/20
+Repeated fits: 3/20
+Repeated fits: 4/20
+Repeated fits: 5/20
+Repeated fits: 6/20
+Repeated fits: 7/20
+Repeated fits: 8/20
+Repeated fits: 9/20
+Repeated fits: 10/20
+Repeated fits: 11/20
+Repeated fits: 12/20
+Repeated fits: 13/20
+Repeated fits: 14/20
+Repeated fits: 15/20
+Repeated fits: 16/20
+Repeated fits: 17/20
+Repeated fits: 18/20
+Repeated fits: 19/20
+Repeated fits: 20/20
+repeated_fits: complete. 20 fixed-partition seeds; primary model selection unchanged.
+Development holdout: video/stratified, 1/10
+Development holdout: video/stratified, 2/10
+Development holdout: video/stratified, 3/10
+Development holdout: video/stratified, 4/10
+Development holdout: video/stratified, 5/10
+Development holdout: video/stratified, 6/10
+Development holdout: video/stratified, 7/10
+Development holdout: video/stratified, 8/10
+Development holdout: video/stratified, 9/10
+Development holdout: video/stratified, 10/10
+Development holdout: video/camera_group, 1/10
+Development holdout: video/camera_group, 2/10
+Development holdout: video/camera_group, 3/10
+Development holdout: video/camera_group, 4/10
+Development holdout: video/camera_group, 5/10
+Development holdout: video/camera_group, 6/10
+Development holdout: video/camera_group, 7/10
+Development holdout: video/camera_group, 8/10
+Development holdout: video/camera_group, 9/10
+Development holdout: video/camera_group, 10/10
+Development holdout: cyber/grouped_stratified, 1/10
+Development holdout: cyber/grouped_stratified, 2/10
+Development holdout: cyber/grouped_stratified, 3/10
+Development holdout: cyber/grouped_stratified, 4/10
+Development holdout: cyber/grouped_stratified, 5/10
+Development holdout: cyber/grouped_stratified, 6/10
+Development holdout: cyber/grouped_stratified, 7/10
+Development holdout: cyber/grouped_stratified, 8/10
+Development holdout: cyber/grouped_stratified, 9/10
+Development holdout: cyber/grouped_stratified, 10/10
+holdout_sensitivity: complete. All alternative holdouts restricted to development observations.
+window_fusion: complete. 12961 test windows; separate validation windows used for all thresholds.
+paired_diagnostic: complete. Label-blind pairs, explicit used/unused records, no event correspondence claim.
+primary_graph: complete. Unique edge counts, node types, component membership, and candidate scores exported.
+Graph sensitivity: reference
+Graph sensitivity: similarity_threshold_0.96
+Graph sensitivity: similarity_threshold_0.98
+Graph sensitivity: similarity_threshold_0.995
+Graph sensitivity: similarity_threshold_0.999
+Graph sensitivity: sample_cap_1000
+Graph sensitivity: sample_cap_2500
+Graph sensitivity: temporal_seconds_0
+Graph sensitivity: temporal_seconds_30
+Graph sensitivity: temporal_seconds_120
+Graph sensitivity: similarity_time_limit_120
+Graph sensitivity: similarity_time_limit_600
+Graph sensitivity: similarity_time_limit_3600
+Ordering sensitivity: native/0
+Ordering sensitivity: random/0
+Ordering sensitivity: random/1
+Ordering sensitivity: random/2
+Ordering sensitivity: random/3
+Ordering sensitivity: random/4
+Ordering sensitivity: random/5
+Ordering sensitivity: random/6
+Ordering sensitivity: random/7
+Ordering sensitivity: random/8
+Ordering sensitivity: random/9
+Ordering sensitivity: score_interleaved/0
+sensitivity: complete. Graph, window, ordering, delay, and dropout scenarios executed and mapped to source records.
+software_checks: complete. 21 invariants passed.
+Interpretation note: More than 90% of graph nodes lie in the largest component; this is not evidence of campaign separation.
+Interpretation note: Modality-availability controls and stratified composition must accompany pooled fusion metrics.
+Interpretation note: Some rules have zero observed false positives. A zero-width bootstrap interval does not establish zero population risk; IID binomial reference limits are supplied separately.
+Interpretation note: Parent-dataset subset selection not supplied; input file retained without resampling.
+pipeline: complete. All configured experiments and numerical exports completed.
+Completed in 34.8 minutes. Outputs: F:\MBZUAI UAE\7-Elsevier-CHBR-Human-centered\GitHub-v2\Outputs\CHBR_R1_v3
+Interpretation note: More than 90% of graph nodes lie in the largest component; this is not evidence of campaign separation.
+Interpretation note: Modality-availability controls and stratified composition must accompany pooled fusion metrics.
+Interpretation note: Some rules have zero observed false positives. A zero-width bootstrap interval does not establish zero population risk; IID binomial reference limits are supplied separately.
+Interpretation note: Parent-dataset subset selection not supplied; input file retained without resampling.
+pipeline: complete. All configured experiments and numerical exports completed.
+Completed in 35.0 minutes. Outputs: F:\MBZUAI UAE\7-Elsevier-CHBR-Human-centered\GitHub-v2\Outputs\CHBR_R1_v3

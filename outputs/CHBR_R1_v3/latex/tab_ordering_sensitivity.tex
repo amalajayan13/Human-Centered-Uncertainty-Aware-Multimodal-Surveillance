@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{UVIF sensitivity to cyber surrogate ordering for the OR target; score-interleaved ordering never uses labels.}
+\label{tab:ordering_sensitivity}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+ordering & bal\_acc\_mean & bal\_acc\_std & roc\_auc\_mean & roc\_auc\_std & fpr\_mean & fpr\_std \\
+\midrule
+native & 0.88259 & -- & 0.9172 & -- & 0.047655 & -- \\
+random & 0.90409 & 0.00088428 & 0.94875 & 0.00023515 & 0.078144 & 0.010312 \\
+score\_interleaved & 0.91225 & -- & 0.9473 & -- & 0.095981 & -- \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

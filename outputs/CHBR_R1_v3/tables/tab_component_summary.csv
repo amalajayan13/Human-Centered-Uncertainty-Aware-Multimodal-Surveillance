@@ -1,0 +1,6 @@
+component_class,count,nodes_covered,share_of_nodes
+Singletons excluding largest,0,0,0
+2-42 nodes excluding largest,518,1050,0.017444758265492608
+43-199 nodes excluding largest,0,0,0
+200+ nodes excluding largest,0,0,0
+Largest component,1,59140,0.98255524173450737
